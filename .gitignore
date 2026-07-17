@@ -1,0 +1,9 @@
+# VS Code
+.vscode/
+
+# Temporary files
+*.swp
+*.tmp
+
+# macOS
+.DS_Store

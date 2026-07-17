@@ -1,0 +1,11 @@
+/
+├── boot
+├── home
+│   └── yuri
+│       ├── Projects
+│       ├── Documents
+│       ├── Downloads
+│       └── ...
+├── etc
+├── usr
+└── var

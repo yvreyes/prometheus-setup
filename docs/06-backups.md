@@ -1,0 +1,3 @@
+-create snapshot
+-restore snapshot
+-cleanup

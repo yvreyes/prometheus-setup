@@ -1,0 +1,8 @@
+- Update mirrors
+- Update system
+- Enable NetworkManager
+- Enable SDDM
+- Configure Git
+- Install yay
+- Install Snapper
+- Configure Docker
