@@ -1,6 +1,18 @@
 # Prometheus
 
-My personal Arch Linux workstation.
+Prometheus is my personal Arch Linux workstation.
+
+It serves as my primary Linux environment for software development, learning, and experimentation.
+
+This repository documents every significant configuration, package, and decision made during the setup so the entire system can be reproduced from scratch.
+
+## Philosophy
+
+- Keep the system minimal.
+- Prefer understanding over automation.
+- Document every meaningful decision.
+- Version-control configuration.
+- Build once, improve continuously.
 
 ## Goals
 
