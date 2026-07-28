@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-cat /sys/class/drm/card0/device/gpu_busy_percent
+
+CARD="/sys/class/drm/card0/device"
+
+usage=$(cat "$CARD/gpu_busy_percent")
+
+echo "${usage}%"

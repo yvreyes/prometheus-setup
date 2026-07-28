@@ -67,7 +67,7 @@
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "󰝟",
+        "format-muted": "󰖁",
         "format-icons": {
             "default": [
                 "󰕿",
@@ -75,21 +75,21 @@
                 "󰕾"
             ]
         },
-        "on-click": "pavucontrol",
-        "scroll-step": 5
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
     },
-    // "cpu": {
-    //     "format": "{icon} {usage}%",
-    //     "format-icon": "",
-    //     "interval": 2
-    // },
-    // "memory": {
-    //     "format": " {}%",
-    //     "interval": 2
-    // },
-    // "custom/gpu": {
-    //     "exec": "~/.config/waybar/scripts/gpu.sh",
-    //     "format": "󰢮 {}",
-    //     "interval": 2
-    // },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true
+    },
+    "memory": {
+        "format": "󰍛 {}%",
+        "tooltip": true
+    },
+    "custom/gpu": {
+        "exec": "~/.config/waybar/scripts/gpu.sh",
+        "interval": 2,
+        "format": "󰢮 {}",
+        "tooltip": false
+    },
 }
