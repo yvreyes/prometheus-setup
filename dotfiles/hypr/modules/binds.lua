@@ -20,12 +20,24 @@ local secondMod = "SUPER + SHIFT"
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(launcher))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(browser))
--- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
+
 hl.bind(mainMod .. " + W", hl.dsp.window.close())
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("/home/yuri/.config/waybar/scripts/launch.sh"))
 hl.bind(secondMod .. " + M",hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+
+hl.bind("Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot-full.sh"))
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot-region.sh"))
+hl.bind("CTRL + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot-copy.sh"))
+
+
+hl.bind(mainMod .. " + F7", hl.dsp.exec_cmd("ddcutil setvcp 10 + 10"), { locked = true, repeating = true })  
+hl.bind(mainMod .. " + F8", hl.dsp.exec_cmd("ddcutil setvcp 10 - 10"), { locked = true, repeating = true })
+
+
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/hypr/scripts/clipboard.sh"))
+-- hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 
